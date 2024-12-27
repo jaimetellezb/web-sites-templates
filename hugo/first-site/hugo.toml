@@ -1,0 +1,42 @@
+baseURL = 'https://jaimetellezb.com/'
+languageCode = 'en-us'
+title = 'Mi sitio web creado con Hugo'
+defaultContentLanguage = "es"
+theme = 'ananke'
+
+[params]
+description = "Un blog completo con un diseño moderno"
+author = "Tu Nombre"
+favicon = "favicon.ico"
+date_format = "02 de enero de 2006"
+landingToReading = true
+
+# Configuración del menú superior
+[menu]
+[[menu.main]]
+identifier = "home"
+name = "Inicio"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+identifier = "about"
+name = "Acerca de"
+url = "/about/"
+weight = 3
+
+
+[params.style]
+primary_color = "#ff5722"
+theme = "light"
+font = "Roboto"
+
+[params.social]
+github = "https://github.com/tuusuario"
+twitter = "https://twitter.com/tuusuario"

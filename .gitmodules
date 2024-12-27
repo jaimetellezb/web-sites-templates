@@ -1,0 +1,24 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "hugo/themes/ananke"]
+	path = hugo/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "hugo/first-site/themes/ananke"]
+	path = hugo/first-site/themes/ananke
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "hugo/first-site/themes/LoveIt"]
+	path = hugo/first-site/themes/LoveIt
+	url = https://github.com/dillonzq/LoveIt.git
+[submodule "hugo/first-site/themes/tailwind"]
+	path = hugo/first-site/themes/tailwind
+	url = https://github.com/tomowang/hugo-theme-tailwind.git
+[submodule "hugo/first-site/themes/PaperMod"]
+	path = hugo/first-site/themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "hugo/first-site/themes/beautifulhugo"]
+	path = hugo/first-site/themes/beautifulhugo
+	url = https://github.com/halogenica/beautifulhugo.git
+[submodule "hugo/first-site/themes/hugo-theme-stack"]
+	path = hugo/first-site/themes/hugo-theme-stack
+	url = https://github.com/CaiJimmy/hugo-theme-stack/
