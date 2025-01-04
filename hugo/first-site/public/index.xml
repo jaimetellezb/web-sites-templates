@@ -5,9 +5,51 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on Mi sitio web creado con Hugo</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 25 Dec 2024 10:52:16 -0500</lastBuildDate>
+    <language>es-co</language>
+    <lastBuildDate>Thu, 26 Dec 2024 21:30:56 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Primer post</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Mon, 30 Dec 2024 22:36:49 +0800</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo. :wave:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi tercer post</title>
+      <link>http://localhost:1313/posts/my-third-post-copy-2/</link>
+      <pubDate>Wed, 25 Dec 2024 10:52:16 -0500</pubDate>
+      <guid>http://localhost:1313/posts/my-third-post-copy-2/</guid>
+      <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi tercer post</title>
+      <link>http://localhost:1313/posts/my-third-post-copy-3/</link>
+      <pubDate>Wed, 25 Dec 2024 10:52:16 -0500</pubDate>
+      <guid>http://localhost:1313/posts/my-third-post-copy-3/</guid>
+      <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi tercer post</title>
+      <link>http://localhost:1313/posts/my-third-post-copy-4/</link>
+      <pubDate>Wed, 25 Dec 2024 10:52:16 -0500</pubDate>
+      <guid>http://localhost:1313/posts/my-third-post-copy-4/</guid>
+      <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi tercer post</title>
+      <link>http://localhost:1313/posts/my-third-post-copy-5/</link>
+      <pubDate>Wed, 25 Dec 2024 10:52:16 -0500</pubDate>
+      <guid>http://localhost:1313/posts/my-third-post-copy-5/</guid>
+      <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mi tercer post</title>
+      <link>http://localhost:1313/posts/my-third-post-copy/</link>
+      <pubDate>Wed, 25 Dec 2024 10:52:16 -0500</pubDate>
+      <guid>http://localhost:1313/posts/my-third-post-copy/</guid>
+      <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Mi tercer post</title>
       <link>http://localhost:1313/posts/my-third-post/</link>
@@ -23,18 +65,25 @@
       <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Mi primer post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Wed, 25 Dec 2024 08:52:16 -0500</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;h2 id=&#34;contenido&#34;&gt;Contenido&lt;/h2&gt;&#xA;&lt;p&gt;Este es un archivo &lt;strong&gt;.md&lt;/strong&gt; de ejemplo para Hugo.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Acerca de</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 25 Dec 2024 12:00:00 +0100</pubDate>
       <guid>http://localhost:1313/about/</guid>
       <description>&lt;p&gt;Soy [Tu Nombre], un apasionado de la tecnología, desarrollo web y compartir conocimiento. 🧑‍💻&#xA;Este blog está diseñado para ayudar a otros a aprender y crecer en sus proyectos.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/categories/cat1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/categories/cat1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/flutter/first-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/flutter/first-post/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

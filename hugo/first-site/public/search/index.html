@@ -1,257 +1,595 @@
 <!DOCTYPE html>
-<html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  
-<title>Buscar</title>
+<html lang="es-co"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar | Mi sitio web creado con Hugo</title>
 
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta
-  name="description"
-  content=""
-/>
-<meta
-  name="keywords"
-  content="hugo, tailwind, tailwindcss, hugo theme, hugo theme tailwind"
-/>
-<meta name="robots" content="noodp" /><link rel="manifest" href="/manifest.json" /><meta property="og:url" content="http://localhost:1313/search/">
-  <meta property="og:site_name" content="Mi sitio web creado con Hugo">
-  <meta property="og:title" content="Mi sitio web creado con Hugo">
-  <meta property="og:description" content="Un blog completo con un diseño moderno">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
-
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Mi sitio web creado con Hugo">
-  <meta name="twitter:description" content="Un blog completo con un diseño moderno">
-      <meta name="twitter:site" content="@https://twitter.com/tuusuario">
+    
+<link href="/favicon.ico" rel="icon" type="image/x-icon" />
 
 
 <link rel="canonical" href="http://localhost:1313/search/" />
 
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/css/index.f2b5b9c8e4e9b03048601ca9eedc29df44c3a73343f4538f41785e16f13c341a.css">
+
+
+<meta name="author" content="test" />
+<meta name="description" content="The life record of test is presented here." />
+
+
+
+<meta name="generator" content="Hugo 0.140.1">
+
+
+<meta property="og:url" content="http://localhost:1313/search/">
+  <meta property="og:site_name" content="Mi sitio web creado con Hugo">
+  <meta property="og:title" content="Mi sitio web creado con Hugo">
+  <meta property="og:description" content="The life record of test is presented here.">
+  <meta property="og:locale" content="es_co">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/me/background.jpg">
 
 
 
 
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/me/background.jpg">
+  <meta name="twitter:title" content="Mi sitio web creado con Hugo">
+  <meta name="twitter:description" content="The life record of test is presented here.">
+      <meta name="twitter:site" content="@jaimetellezb">
 
 
 
 
+<link rel="stylesheet" href="/css/output.css" />
 
-  <link rel="preload" href="/search/index.json" as="fetch" crossorigin="anonymous">
-</head>
-<body class="flex flex-col min-h-screen w-full bg-slate-50 dark:bg-gray-800">
+
+
+
+     
+
     
-<div class="fixed right-0 top-0 z-50 flex items-center justify-center bg-gray-200 p-2 text-sm uppercase text-black sm:bg-red-200 md:bg-yellow-200 lg:bg-green-200 xl:bg-blue-200 2xl:bg-pink-200">
-  <span class="block sm:hidden">all</span>
-  <span class="hidden sm:block md:hidden">sm</span>
-  <span class="hidden md:block lg:hidden">md</span>
-  <span class="hidden lg:block xl:hidden">lg</span>
-  <span class="hidden xl:block 2xl:hidden">xl</span>
-  <span class="hidden 2xl:block">2xl</span>
-</div>
-
-  <header class="flex flex-none justify-center z-10">
-    <div class="flex flex-row gap justify-between w-full max-w-4xl lg:max-w-5xl h-12 mt-3">
-  <div class="flex-none ml-2 md:ml-0">
-    <a href="/" class="">
-      <img class="h-12 w-12 rounded-full object-cover bg-gray-100" src="https://placehold.co/512/webp" alt="logo">
-    </a>
-  </div>
-  <div class="flex-1"></div>
-  <div class="flex-none">
+    <link rel="stylesheet" href="/css/custom.css" />
     
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
 
-
-<nav class="h-full static">
-  <button id="navbar-menu-toggle" type="button" class="inline-flex items-center p-2 text-sm text-slate-800 dark:text-slate-200 rounded-lg md:hidden" aria-controls="navbar-menu" aria-expanded="false">
-    <span class="sr-only">Abrir menú principal</span>
-    <i class="w-8 h-8">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M4 6l16 0" />
-  <path d="M4 12l16 0" />
-  <path d="M4 18l16 0" />
-</svg>
-
-    </i>
-  </button>
-  <div class="absolute md:static top-16 left-0 right-0 z-50 hidden w-full md:block md:w-auto" id="navbar-menu">
-    <ul class="flex flex-col mx-2 md:mx-0 md:flex-row md:border-0 rounded-sm md:rounded-full px-3 text-base font-medium text-slate-800 dark:text-slate-200 shadow-lg bg-white dark:bg-gray-600 shadow-slate-800/5 dark:shadow-slate-200/5 ring-1 ring-slate-900/5 dark:ring-slate-100/5">
+  <body x-data="{
+    flip: false,
+  }">
     
-        <li id="home" class="">
-          <a class="block px-3 py-3 hover:text-emerald-600"
-            href="/" title="Inicio">Inicio</a>
-        </li>
+    <div id="dream-global-bg"></div>
+
+    
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Voltear!">
+        <div class="h-10 rounded-full">
+          <img src="/me/yy.jpg" alt="test test" />
+        </div>
+      </div>
+
       
-    
-        <li id="blog" class="">
-          <a class="block px-3 py-3 hover:text-emerald-600"
-            href="/posts/" title="Blog">Blog</a>
-        </li>
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          test test
+        </a>
+        
+        
+      </div>
       
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Buscar">
+    <ion-icon name="search"></ion-icon>
+    Buscar
+  </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://github.com/jaimetellezb" target="_blank" title="GitHub">
     
-        <li id="about" class="">
-          <a class="block px-3 py-3 hover:text-emerald-600"
-            href="/about/" title="Acerca de">Acerca de</a>
-        </li>
+    <ion-icon name="logo-github"></ion-icon>
+    
+    GitHub
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archivos">
+    <ion-icon name="archive"></ion-icon>
+    Archivos
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Todas las categorías">
+    <ion-icon name="grid"></ion-icon>
+    Todas las categorías
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="Todas las etiquetas">
+    <ion-icon name="pricetags"></ion-icon>
+    Todas las etiquetas
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
       
-    
-    </ul>
+      
+      
+      
+
+      
+      
+        
+      
+
+      
+
+      
+      
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Buscar">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://github.com/jaimetellezb" target="_blank" title="GitHub">
+    <ion-icon class="group-hover:text-primary-content" name="logo-github"></ion-icon>
+  </a>
+  
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archivos">
+    <ion-icon name="archive"></ion-icon>
+    Archivos
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Todas las categorías">
+    <ion-icon name="grid"></ion-icon>
+    Todas las categorías
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="Todas las etiquetas">
+    <ion-icon name="pricetags"></ion-icon>
+    Todas las etiquetas
+  </a>
+</li>
+
+
+          
+
+          
+          
+
+
+
+
+
+
+
+
+
+
+          
+        </ul>
+      </div>
+      
+    </section>
   </div>
 </nav>
 
 
-  </div>
-  
-  <div class="flex-none mx-1"></div>
-  
-  <div class="flex-none md:hidden">
-    <a href=/search/ class="inline-flex items-center p-2 text-sm text-slate-800 dark:text-slate-200 rounded-lg" aria-controls="navbar-menu" aria-expanded="false">
-      <span class="sr-only">Buscar</span>
-      <i class="w-8 h-8">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-    <path d="M21 21l-6 -6" />
-</svg>
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
 
-      </i>
-    </a>
-  </div>
-  <div class="darkmode-toggle flex flex-none mr-2 md:mr-0">
-    <label for="darkmode-toggle" class="flex items-center px-3 cursor-pointer rounded-full bg-gray-100 dark:bg-gray-600" title="Cambiar a modo oscuro">
-      <input name="darkmode-toggle" id="darkmode-toggle" type="checkbox" class="sr-only peer" aria-label="Cambiar a modo oscuro">
-      <div class="group flex flex-row gap-1 justify-center h-8 px-1 rounded-full bg-white dark:bg-gray-700">
-        <i class="h-6 w-6 flex-none rounded-full bg-yellow-400 place-self-center peer-checked:group-[]:invisible">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brightness-down" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-   <path d="M12 5l0 .01"></path>
-   <path d="M17 7l0 .01"></path>
-   <path d="M19 12l0 .01"></path>
-   <path d="M17 17l0 .01"></path>
-   <path d="M12 19l0 .01"></path>
-   <path d="M7 17l0 .01"></path>
-   <path d="M5 12l0 .01"></path>
-   <path d="M7 7l0 .01"></path>
-</svg>
 
-        </i>
-        <i class="h-6 w-6 flex-none rounded-full place-self-center invisible peer-checked:group-[]:visible">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
-   <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"></path>
-   <path d="M19 11h2m-1 -1v2"></path>
-</svg>
+<div class="mt-8 lg:mt-12 px-4"
 
-        </i>
+x-data="{
+  search: '',
+  get posts() { return this.search !== '' ? window.fuse.search(this.search) : [] },
+}">
+  <label for="search" class="input input-bordered flex items-center gap-2">
+    <input id="search" name="search" type="text" class="grow" placeholder="Buscar" x-model.debounce="search" />
+    <ion-icon name="search"></ion-icon>
+  </label>
+
+  <div class="mt-8 space-y-4">
+  <template x-for="post in posts">
+    <a class="card card-compact bg-base-100 hover:bg-base-content/10 cursor-pointer border border-base-content/30" :href="post.item.url">
+      <div class="card-body">
+        <h2 class="card-title" x-text="post.item.title"></h2>
+
+        <div x-html="post.item.description"></div>
+
+        <div class="card-actions justify-between items-center mt-4">
+          <div class="flex items-center">
+            <template x-if="post.item.avatar">
+            <div class="avatar mr-1">
+              <div class="w-8 rounded-full">
+                <img class="my-0" :src="post.item.avatar" :alt="post.item.author" />
+              </div>
+            </div>
+            </template>
+            <template x-if="!post.item.avatar">
+            <span>@</span>
+            </template>
+
+            <template x-if="post.item.author">
+            <span x-text="post.item.author"></span>
+            </template>
+            <template x-if="!post.item.author">
+            <span>test</span>
+            </template>
+            </span>
+          </div>
+
+          <div class="inline-flex items-center">
+            <ion-icon name="time" class="mr-1"></ion-icon>
+            <span><span x-text="post.item.readingTime"></span> minutos de lectura</span>
+          </div>
+        </div>
       </div>
-    </label>
+    </a>
+  </template>
   </div>
 </div>
 
-  </header>
-  <main class="flex flex-auto justify-center">
-    
-<div class="w-full max-w-4xl lg:max-w-5xl">
-  <form class="my-4 mx-2 md:mx-0" action="./" method="get">
-    <div class="flex">
-      <input type="text" name="search" id="search-input" required placeholder="Buscar..." class="rounded-none rounded-s-lg border border-gray-300 text-slate-800 focus:outline-none focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm p-3  dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-slate-200 dark:focus:ring-blue-500 dark:focus:border-blue-500">
-      <button class="inline-flex items-center px-3 text-sm text-slate-900 bg-slate-200 border border-e-0 border-gray-300 rounded-e-lg dark:bg-slate-600 dark:text-slate-400 dark:border-slate-600">
-        <i class="h-6 w-6 flex-none">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-    <path d="M21 21l-6 -6" />
-</svg>
 
-        </i>
-      </button>
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2018 - 2025 Mi sitio web creado con Hugo
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
     </div>
-  </form>
-  <div class="w-full max-w-4xl lg:max-w-5xl">
-    <section class="flex flex-col w-full" id="search-result"></section>
-    <section class="flex flex-col w-full">
-      <p id="search-result-empty" class="hidden mx-2 md:mx-0 text-lg font-semibold text-slate-800 dark:text-slate-200">No se encontró ningún resultado.</p>
-    </section>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Enlaces sociales</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+  <li>
+    <a href="mailto:correo@gmail.com" title="Email">
+      <ion-icon name="mail"></ion-icon>
+    </a>
+  </li>
+  
+
+  
+  <li>
+    <a href="https://github.com/jaimetellezb" target="_blank" title="GitHub">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://x.com/jaimetellezb" target="_blank" title="X">
+      <ion-icon name="logo-x"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/jaimetellezb" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
   </div>
+  
+
+  
 </div>
 
-<div class="hidden" id="tag-icon">
-  <i class="h-5 w-5 flex-none">
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M5 9l14 0"></path>
-   <path d="M5 15l14 0"></path>
-   <path d="M11 4l-4 16"></path>
-   <path d="M17 4l-4 16"></path>
-</svg>
+            
 
-  </i>
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2018 - 2025 Mi sitio web creado con Hugo
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1"></script>
-<script src="/js/doT.min.js"></script>
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
 
-<script type="text/javascript">
-  var searchOptions = {
-    summaryInclude:  180 ,
-    minMatchCharLength:  2 ,
-    threshold:  0.3 ,
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "bumblebee"
+  window.darkTheme = "dracula"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js" integrity="sha256-42IbU8t3tOwwbexB7ZVRHm3YDRf65aBPPjRtIUufj5I=" crossorigin="anonymous"></script>
+<script>
+  var fuseData = [{"author":"Author Name","avatar":null,"categories":["category1"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo. 👋\u003c/p\u003e","readingTime":1,"tags":["tag1","tag2"],"title":"Primer post","url":"/posts/my-first-post/"},{"author":null,"avatar":null,"categories":["personal"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo.\u003c/p\u003e","readingTime":1,"tags":["inicio"],"title":"Mi tercer post","url":"/posts/my-third-post-copy-2/"},{"author":null,"avatar":null,"categories":["personal"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo.\u003c/p\u003e","readingTime":1,"tags":["inicio"],"title":"Mi tercer post","url":"/posts/my-third-post-copy-3/"},{"author":null,"avatar":null,"categories":["personal"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo.\u003c/p\u003e","readingTime":1,"tags":["inicio"],"title":"Mi tercer post","url":"/posts/my-third-post-copy-4/"},{"author":null,"avatar":null,"categories":["personal"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo.\u003c/p\u003e","readingTime":1,"tags":["inicio"],"title":"Mi tercer post","url":"/posts/my-third-post-copy-5/"},{"author":null,"avatar":null,"categories":["personal"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo.\u003c/p\u003e","readingTime":1,"tags":["inicio"],"title":"Mi tercer post","url":"/posts/my-third-post-copy/"},{"author":null,"avatar":null,"categories":["personal"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo.\u003c/p\u003e","readingTime":1,"tags":["inicio"],"title":"Mi tercer post","url":"/posts/my-third-post/"},{"author":null,"avatar":null,"categories":["personal"],"description":"\u003ch2 id=\"contenido\"\u003eContenido\u003c/h2\u003e\n\u003cp\u003eEste es un archivo \u003cstrong\u003e.md\u003c/strong\u003e de ejemplo para Hugo.\u003c/p\u003e","readingTime":1,"tags":["inicio","bienvenida"],"title":"Mi segundo post","url":"/posts/my-second-post/"}];
+  var fuseOptions = {
+    keys: [
+      "title",
+    ]
   };
-</script><script src="/search.05daba52664889fa2ade18f8f9ad0d59d4902ed096aac71878d1b194401aa7b8.js"></script>
+
+  var fuse = new Fuse(fuseData, fuseOptions);
+</script>
 
 
-  </main>
-  <footer class="flex flex-none justify-center">
-    <section class="flex flex-col md:flex-row mx-2 md:mx-0 gap-2 md:gap-0 justify-between w-full max-w-4xl lg:max-w-5xl py-6 text-slate-500 dark:text-slate-300">
-  <div class="flex flex-row">
+
     
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-
-  </div>
-  <div class="grow"></div>
-  <div class="flex flex-row">
-    <i class="h-6 w-6 flex-none"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-   <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-   <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173"></path>
-</svg>
-</i> 2023 - 2024 
     
-  </div>
-  
-  <div class="flex flex-row">
-    <span class="ml-0 pl-0 md:ml-2 md:pl-2 border-l-0 md:border-l border-slate-300 dark:border-slate-400">
-      Con tecnología de <a href="https://gohugo.io" target="_blank" rel="noopener" class="underline">Hugo</a> <span class="text-red-600">&hearts;</span> <a href="https://github.com/tomowang/hugo-theme-tailwind" target="_blank" rel="noopener" class="underline">Tailwind</a>
-    </span>
-  </div>
-  
-</section>
 
-  </footer>
-  <script src="/main.js"></script>
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-');
+        }
+      </script>
+    
 
-
-
-
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>

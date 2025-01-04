@@ -1,10 +1,100 @@
 baseURL = 'https://jaimetellezb.com/'
-languageCode = 'en-us'
-title = 'Mi sitio web creado con Hugo'
 defaultContentLanguage = "es"
-theme = 'ananke'
+languageCode = 'es-co'
+title = 'Mi sitio web creado con Hugo'
+
+theme = 'dream'
+
+## dream theme
+enableGitInfo = true
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
+[services]
+[services.disqus]
+shortname = "jaimetellezb"
+[services.googleAnalytics]
+ID = "G-"
+
+
+[markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.parser.attribute]
+block = true
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+noClasses = false
+##
 
 [params]
+
+## dream theme
+# https://daisyui.com/docs/themes/
+lightTheme = "bumblebee"
+darkTheme = "dracula"
+
+#enableEmoji = true
+
+
+#zenMode = true
+
+images = ["me/background.jpg"]
+
+author = "test"
+description = "The life record of test is presented here."
+avatar = "me/yy.jpg"
+headerTitle = "test test"
+#motto = "与其感慨路难行，不如马上出发。"
+
+#rss = true
+
+utterancesRepo = "jaimetellezb/jaimetellezb.github.io"
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+
+# waline = true
+# walineServer = ""
+
+email = "correo@gmail.com"
+
+siteStartYear = 2018
+
+favicon = "favicon.ico"
+
+# Syntax highlighting
+#customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+reorderNavItems = ["search", "github", "posts", "categories", "tags", "rss"]
+collapseNavItems = ["posts", "categories", "tags"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+
+[params.social]
+twitter = "jaimetellezb"
+
+[params.navItems]
+github = { href = "https://github.com/jaimetellezb", target = "_blank", icon = "logo-github", title = "GitHub" }
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+# customJS = []
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy-MM-dd"
+##
+
 description = "Un blog completo con un diseño moderno"
 author = "Tu Nombre"
 favicon = "favicon.ico"
@@ -12,31 +102,31 @@ date_format = "02 de enero de 2006"
 landingToReading = true
 
 # Configuración del menú superior
-[menu]
-[[menu.main]]
-identifier = "home"
-name = "Inicio"
-url = "/"
-weight = 1
+#[menu]
+#[[menu.main]]
+#identifier = "home"
+#name = "Inicio"
+#url = "/"
+#weight = 1
 
-[[menu.main]]
-identifier = "blog"
-name = "Blog"
-url = "/posts/"
-weight = 2
+#[[menu.main]]
+##identifier = "blog"
+#name = "Blog"
+#url = "/posts/"
+#weight = 2
 
-[[menu.main]]
-identifier = "about"
-name = "Acerca de"
-url = "/about/"
-weight = 3
+#[[menu.main]]
+#identifier = "about"
+#name = "Acerca de"
+#url = "/about/"
+#weight = 3
 
 
-[params.style]
-primary_color = "#ff5722"
-theme = "light"
-font = "Roboto"
+#[params.style]
+#primary_color = "#ff5722"
+#theme = "light"
+#font = "Roboto"
 
-[params.social]
-github = "https://github.com/tuusuario"
-twitter = "https://twitter.com/tuusuario"
+#[params.social]
+#github = "https://github.com/tuusuario"
+#twitter = "https://twitter.com/tuusuario"

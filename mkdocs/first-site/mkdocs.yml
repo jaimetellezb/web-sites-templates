@@ -1,0 +1,6 @@
+site_name: Mi sitio
+nav:
+  - Inicio: index.md
+  - Blog: blog.md
+theme:
+  name: material

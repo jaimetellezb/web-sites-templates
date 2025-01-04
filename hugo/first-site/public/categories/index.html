@@ -1,184 +1,970 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="es-co"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Mi sitio web creado con Hugo</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Un blog completo con un diseño moderno">
-    <meta name="generator" content="Hugo 0.140.1">
-    
-    
-    
-      <meta name="robots" content="noindex, nofollow">
-    
-    
-      <meta name="author" content = "Tu Nombre">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+
+
+Todas las categorías | Mi sitio web creado con Hugo</title>
 
     
-<link rel="stylesheet" href="/ananke/css/main.min.css" >
+<link href="/favicon.ico" rel="icon" type="image/x-icon" />
+
+
+<link rel="canonical" href="http://localhost:1313/categories/" />
 
 
 
-    
-
-    
-      
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<meta name="author" content="test" />
+<meta name="description" content="The life record of test is presented here." />
 
 
-    
 
-    
-    
-      <link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="Mi sitio web creado con Hugo" />
-      <link href="/categories/index.xml" rel="feed" type="application/rss+xml" title="Mi sitio web creado con Hugo" />
-      
-    
+<meta name="generator" content="Hugo 0.140.1">
 
-    
-      <link rel="canonical" href="http://localhost:1313/categories/">
-    
 
-    <meta property="og:url" content="http://localhost:1313/categories/">
+<meta property="og:url" content="http://localhost:1313/categories/">
   <meta property="og:site_name" content="Mi sitio web creado con Hugo">
   <meta property="og:title" content="Categories">
-  <meta property="og:description" content="Un blog completo con un diseño moderno">
-  <meta property="og:locale" content="en_us">
+  <meta property="og:description" content="The life record of test is presented here.">
+  <meta property="og:locale" content="es_co">
   <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/me/background.jpg">
 
-  <meta itemprop="name" content="Categories">
-  <meta itemprop="description" content="Un blog completo con un diseño moderno">
-  <meta itemprop="datePublished" content="2024-12-25T10:52:16-05:00">
-  <meta itemprop="dateModified" content="2024-12-25T10:52:16-05:00">
-  <meta name="twitter:card" content="summary">
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/me/background.jpg">
   <meta name="twitter:title" content="Categories">
-  <meta name="twitter:description" content="Un blog completo con un diseño moderno">
-      <meta name="twitter:site" content="@https://twitter.com/tuusuario">
+  <meta name="twitter:description" content="The life record of test is presented here.">
+      <meta name="twitter:site" content="@jaimetellezb">
 
-	
-  </head><body class="ma0 avenir bg-near-white development">
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+     
 
     
+    <link rel="stylesheet" href="/css/custom.css" />
+    
 
-  <header>
-    <div class="pb3-m pb6-l bg-black">
-      <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
-      
-        Mi sitio web creado con Hugo
-      
-    </a>
-    <div class="flex-l items-center">
-      
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Voltear!">
+        <div class="h-10 rounded-full">
+          <img src="/me/yy.jpg" alt="test test" />
+        </div>
+      </div>
 
       
-        <ul class="pl0 mr3">
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/" title="Inicio pagina">
-              Inicio
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/posts/" title="Blog pagina">
-              Blog
-            </a>
-          </li>
-          
-          <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white no-underline white-90" href="/about/" title="Acerca de pagina">
-              Acerca de
-            </a>
-          </li>
-          
-        </ul>
-      
-      <div class="ananke-socials"></div>
-
-    </div>
-  </div>
-</nav>
-
-      <div class="tc-l pv3 ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 light-silver mb0 lh-title">
-          Categories
-        </h1>
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          test test
+        </a>
+        
         
       </div>
-    </div>
-  </header>
-
-
-    <main class="pb7" role="main">
       
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="group inline-flex items-center p-2 cursor-pointer" href="/search" title="Buscar">
+    <ion-icon name="search"></ion-icon>
+    Buscar
+  </a>
+</li>
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://github.com/jaimetellezb" target="_blank" title="GitHub">
     
-  <article class="cf pa3 pa4-m pa4-l">
-    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links mid-gray">
-      
-    </div>
-  </article>
-  <div class="mw8 center">
-    <section class="ph4">
-      
-        <h2 class="f1">
-          <a href="/categories/personal/" class="link blue hover-black">
-            Category: Personal
-          </a>
-        </h2>
-        
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/my-third-post/" class="link black dim">
-        Mi tercer post
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <h2 id="contenido">Contenido</h2>
-<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
-    </div>
-    <a href="/posts/my-third-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">Leer más</a>
-  </div>
-</div>
+    <ion-icon name="logo-github"></ion-icon>
+    
+    GitHub
+  </a>
+</li>
 
-        
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="/posts/my-second-post/" class="link black dim">
-        Mi segundo post
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <h2 id="contenido">Contenido</h2>
-<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
-    </div>
-    <a href="/posts/my-second-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">Leer más</a>
-  </div>
-</div>
 
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archivos">
+    <ion-icon name="archive"></ion-icon>
+    Archivos
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Todas las categorías">
+    <ion-icon name="grid"></ion-icon>
+    Todas las categorías
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="Todas las etiquetas">
+    <ion-icon name="pricetags"></ion-icon>
+    Todas las etiquetas
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+      
+      
+
+      
+      
         
+      
+
+      
+
+      
+      
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/search" title="Buscar">
+  <ion-icon class="group-hover:text-primary-content" name="search"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://github.com/jaimetellezb" target="_blank" title="GitHub">
+    <ion-icon class="group-hover:text-primary-content" name="logo-github"></ion-icon>
+  </a>
+  
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archivos">
+    <ion-icon name="archive"></ion-icon>
+    Archivos
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="Todas las categorías">
+    <ion-icon name="grid"></ion-icon>
+    Todas las categorías
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="Todas las etiquetas">
+    <ion-icon name="pricetags"></ion-icon>
+    Todas las etiquetas
+  </a>
+</li>
+
+
+          
+
+          
+          
+
+
+
+
+
+
+
+
+
+
+          
+        </ul>
+      </div>
       
     </section>
   </div>
+</nav>
 
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
-    &copy;  Mi sitio web creado con Hugo 2024 
-  </a>
-    <div><div class="ananke-socials"></div>
-</div>
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+
+
+<div class="flex flex-col md:flex-row mt-4">
+
+  <div class="md:basis-[200px] lg:basis-[300px] p-4 prose dark:prose-invert">
+    <h1 class="text-2xl">Todas las categorías</h1>
+    <p class="text-sm">2 categorías</p>
+    <div class="flex flex-wrap gap-4 mt-6">
+      
+      <a href="/categories/category1/" class="badge h-6 no-underline hover:badge-primary">
+        Category1
+      </a>
+      
+      <a href="/categories/personal/" class="badge h-6 no-underline hover:badge-primary">
+        Personal
+      </a>
+      
+    </div>
   </div>
+  
+  <div class="divider divider-vertical md:divider-horizontal px-4 md:px-0"></div>
+  
+  <div class="flex-1">
+    
+
+    
+    <div class="dream-grid">
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-first-post/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default3_hu11811107914568380876.webp" type="image/webp" />
+      <img src="/images/default3.jpg" alt="/images/default3.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Primer post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-30T22:36:49&#43;08:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo. 👋</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Author Name</span>
+    
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-third-post-copy-2/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default4_hu11774824972063855820.webp" type="image/webp" />
+      <img src="/images/default4.jpg" alt="/images/default4.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Mi tercer post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-25T10:52:16-05:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">test</span>
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-third-post-copy-3/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default2_hu4245215999118357849.webp" type="image/webp" />
+      <img src="/images/default2.jpg" alt="/images/default2.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Mi tercer post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-25T10:52:16-05:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">test</span>
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-third-post-copy-4/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default4_hu11774824972063855820.webp" type="image/webp" />
+      <img src="/images/default4.jpg" alt="/images/default4.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Mi tercer post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-25T10:52:16-05:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">test</span>
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-third-post-copy-5/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default2_hu4245215999118357849.webp" type="image/webp" />
+      <img src="/images/default2.jpg" alt="/images/default2.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Mi tercer post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-25T10:52:16-05:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">test</span>
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-third-post-copy/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default1_hu18298318514717008910.webp" type="image/webp" />
+      <img src="/images/default1.jpg" alt="/images/default1.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Mi tercer post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-25T10:52:16-05:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">test</span>
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-third-post/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default4_hu11774824972063855820.webp" type="image/webp" />
+      <img src="/images/default4.jpg" alt="/images/default4.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Mi tercer post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-25T10:52:16-05:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">test</span>
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+      <div class="w-full md:w-1/2 lg:w-1/3 p-4 dream-column">
+        <a class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl cursor-pointer dark:border dark:border-base-content/30" href="/posts/my-second-post/">
+  
+  <figure>
+    
+    
+    <picture>
+      <source srcset="/images/default2_hu4245215999118357849.webp" type="image/webp" />
+      <img src="/images/default2.jpg" alt="/images/default2.jpg" />
+    </picture>
+    
+  </figure>
+  
+
+  <div class="card-body">
+    <h2 class="card-title">Mi segundo post</h2>
+
+    <p class="date text-base-content/60">
+    
+      <span data-format="luxon">2024-12-25T09:52:16-05:00</span>
+    
+    </p>
+
+    <h2 id="contenido">Contenido</h2>
+<p>Este es un archivo <strong>.md</strong> de ejemplo para Hugo.</p>
+
+    <div class="card-actions justify-between items-center mt-4">
+      <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    <span itemprop="name">test</span>
+  
+  </span>
+</div>
+
+
+      <div class="flex items-center">
+        <ion-icon name="time" class="mr-1"></ion-icon>
+        <span>1 minuto de lectura</span>
+      </div>
+    </div>
+  </div>
+</a>
+
+      </div>
+    
+    </div>
+    
+
+    
+  </div>
+</div>
+
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2018 - 2025 Mi sitio web creado con Hugo
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
 </footer>
 
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+  
+  
+  
+
+  
+  <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 dream-column">
+    <article
+      class="card card-compact bg-base-100 hover:bg-base-content/10 shadow-xl dark:border dark:border-base-content/30"
+    >
+      <div class="card-body">
+        <div class="card-title">Enlaces sociales</div>
+
+        <ul class="menu menu-horizontal flex-wrap w-full px-0 [&_ion-icon]:text-lg">
+  
+  <li>
+    <a href="mailto:correo@gmail.com" title="Email">
+      <ion-icon name="mail"></ion-icon>
+    </a>
+  </li>
+  
+
+  
+  <li>
+    <a href="https://github.com/jaimetellezb" target="_blank" title="GitHub">
+      <ion-icon name="logo-github"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://x.com/jaimetellezb" target="_blank" title="X">
+      <ion-icon name="logo-x"></ion-icon>
+    </a>
+  </li>
+  
+  <li>
+    <a href="https://www.linkedin.com/in/jaimetellezb" target="_blank" title="Linkedin">
+      <ion-icon name="logo-linkedin"></ion-icon>
+    </a>
+  </li>
+  
+</ul>
+
+      </div>
+    </article>
+  </div>
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2018 - 2025 Mi sitio web creado con Hugo
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'moon', status: 'y' },
+    { name: 'sunny', status: 'n' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "bumblebee"
+  window.darkTheme = "dracula"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+<script
+  src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"
+  integrity="sha256-4sbTzmCCW9LGrIh5OsN8V5Pfdad1F1MwhLAOyXKnsE0="
+  crossorigin="anonymous"
+></script>
+<script>
+  format()
+
+  function format() {
+    document.querySelectorAll('span[data-format="luxon"]').forEach(el => {
+      const date = el.textContent
+
+      el.textContent = luxon.DateTime.fromISO(date, { locale: "es" }).toFormat("yyyy-MM-dd")
+    })
+  }
+</script>
+
+
+
+
+
+    
+
+    
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-');
+        }
+      </script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
