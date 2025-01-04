@@ -1,2 +1,2 @@
 # web-sites-templates
-Alternativas para construir sitios web (Hugo, MkDocs, Jekyll y Docusaurus)
+Alternativas para construir sitios web (Hugo, MkDocs, Jekyll y Docusaurus).
