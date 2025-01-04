@@ -15,14 +15,14 @@ Hay unos prerrequisitos iniciales, antes de iniciar:
 
 Vamos a realizar la instalación en `macOS`.
 
-![alt text](/assets/image.png)
+![alt text](/hugo/assets/image.png)
 
 En este caso lo haremos mediante el manejador de paquetes [Homebrew](https://brew.sh/).
 Basta con ejecutar el siguiente comando desde la terminal:
 ```bash
 brew install hugo
 ```
-![alt text](/assets/image-1.png)
+![alt text](/hugo/assets/image-1.png)
 
 Podemos utilizar el comando para revisar la versión instalada:
 ```bash
@@ -46,7 +46,7 @@ Para iniciar con Hugo, podemos seguir estos pasos:
 hugo new site first-site
 ```
 
-![alt text](/assets/image-2.png)
+![alt text](/hugo/assets/image-2.png)
 
 ````
 Congratulations! Your new Hugo site was created in /Users/jaitellez/development/github/personal/web-sites-templates/hugo/first-site.
@@ -66,7 +66,7 @@ See documentation at https://gohugo.io/.
 
 - El directorio queda con la siguiente estructura
 
-![alt text](/assets/image-3.png)
+![alt text](/hugo/assets/image-3.png)
 
 - Ingresar al directorio con el comando:
 ```bash
@@ -75,8 +75,8 @@ cd first-site
 
 - Clonar el tema de Anake en el directorio `themes`, lo añade como submódulo.
 
-![alt text](/assets/image-4.png)
-![alt text](/assets/image-5.png)
+![alt text](/hugo/assets/image-4.png)
+![alt text](/hugo/assets/image-5.png)
 
 - Indicar el tema actual en la configuración del sitio.
 ```bash
